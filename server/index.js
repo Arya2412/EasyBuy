@@ -1,9 +1,4 @@
 
-// const express = require("express");
-// const mongoose = require("mongoose");
-// const authRouter = require("./routes/auth.js");
-// const adminRouter = require("./routes/admin");
-
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");

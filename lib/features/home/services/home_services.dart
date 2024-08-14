@@ -19,11 +19,13 @@ class HomeServices {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
     List<Product> productList = [];
     try {
-      http.Response res = await http
-          .get(Uri.parse('$uri/api/products?category=$category'), headers: {
+      http.Response res = await http.get(
+        Uri.parse('$uri/api/products?category=$category'), 
+        headers: {
         'Content-Type': 'application/json; charset=UTF-8',
-        'x-auth-token': userProvider.user.token,
-      });
+        'x-auth-token': userProvider.user.token
+        }
+      );
 
       // ignore: use_build_context_synchronously
       httpErrorHandle(

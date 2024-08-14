@@ -257,7 +257,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
                     Step(
                       title: const Text('Received'),
                       content: const Text(
-                        'Your order has been delivered and signed by you.',
+                        'Your order is received by nearest warehouse.',
                       ),
                       isActive: currentStep > 2,
                       state: currentStep > 2
